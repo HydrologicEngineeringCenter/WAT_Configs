@@ -67,6 +67,8 @@
             <map>
                 <!--This is now required because the parallelJobsNumber setting is not entirely reliable-->
                 <entry key="frmJobCount"  value-ref="counter1"/>
+		<!-- This is how node workingDir could be moved to different partition. -->
+		<entry key="ggComputeWorkingDir" value="W:\DCWorkingDir" />
             </map>
         </property>
     </bean>

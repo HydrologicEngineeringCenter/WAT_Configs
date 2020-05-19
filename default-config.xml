@@ -66,6 +66,8 @@
         <property name="userAttributes">
             <map>
                 <!--This is now required because the parallelJobsNumber setting is not entirely reliable-->
+		    <!-- This is how node workingDir could be moved to different partition. -->
+				<entry key="ggComputeWorkingDir" value="W:\DCWorkingDir" />
                 <entry key="frmJobCount"  value-ref="counter1"/>
             </map>
         </property>

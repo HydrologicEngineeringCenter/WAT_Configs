@@ -1,8 +1,10 @@
 @echo off
 
 rem adjust these first two
-set IGNITE_HOME=C:\ignite
-set WAT_HOME=C:\Programs\HEC-WAT\HEC-WAT-v1.1.0.122\HEC-WAT\
+set IGNITE_HOME=C:\Programs\ignite
+set JAVA_HOME=C:\Programs\ignite\jdk
+set WAT_HOME=C:\Programs\HEC-WAT-v1.1.0.279\HEC-WAT
+
 
 rem these should be okay
 set JVM_OPTS= -Xms1g -Xmx6g -server -XX:+AggressiveOpts -XX:MaxPermSize=256m -ea 
@@ -16,7 +18,8 @@ set JVM_OPTS=%JVM_OPTS% -DmaxComputeTextPaneLength=5000
 set JVM_OPTS=%JVM_OPTS% -DmaxMessagesTabLength=5000
 set JVM_OPTS=%JVM_OPTS% -DHecFile.NoFileCompression=true
 set JVM_OPTS=%JVM_OPTS% -DFIA.ServerWaitMs=1200
-set JVM_OPTS=%JVM_OPTS% -DFRA.SqueezeDSS=true
+set JVM_OPTS=%JVM_OPTS% -DFRA.NoSqueezeDSS=false
+set JVM_OPTS=%JVM_OPTS% -DIgnoreRestartFile=true
 set JVM_OPTS=%JVM_OPTS% -DMerge.IntegrityLevel=0
 set JVM_OPTS=%JVM_OPTS% -XX:+HeapDumpOnOutOfMemoryError  
 ::set JVM_OPTS=%JVM_OPTS% -Djava.util.logging.manager=org.apache.logging.julbridge.JULBridgeLogManager
@@ -36,6 +39,4 @@ for %%A in (%CONFIG_FILE%) do set shortconfig=%%~sA
 
 cd "%WAT_HOME%"
 call "%IGNITE_HOME%\bin\ignite.bat" %shortconfig% > %temp%\out.log 2>&1
-
-
 

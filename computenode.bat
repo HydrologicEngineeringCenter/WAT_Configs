@@ -3,7 +3,7 @@
 rem adjust these first two
 set IGNITE_HOME=C:\Programs\ignite
 set JAVA_HOME=C:\Programs\ignite\jdk
-set WAT_HOME=C:\Programs\HEC-WAT-v1.1.0.279\HEC-WAT
+set WAT_HOME=C:\Programs\HEC-WAT
 
 
 rem these should be okay

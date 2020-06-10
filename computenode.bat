@@ -28,7 +28,7 @@ set JVM_OPTS=%JVM_OPTS% -Djavax.xml.parsers.SAXParserFactory=com.sun.org.apache.
 set JVM_OPTS=%JVM_OPTS% -DWriteFilesToDelete=true
 
 rem -verbose:class
-set USER_LIBS=C:\Programs\DC\Plugin\gridgaincompute.jar;%WAT_HOME%\jar\sys\ignite\*;%WAT_HOME%\jar\*;%WAT_HOME%\jar\rmi\*;%WAT_HOME%\jar\sys\*;%WAT_HOME%\jar\ext\*;%WAT_HOME%\jar\sys\excel\*;%WAT_HOME%\jar\sys\akka\*;%WAT_HOME%\jar\sys\ratingEditor\*;%WAT_HOME%\..\apps\HEC-HMS\*;%WAT_HOME%\jar\sys\geotools\*
+set USER_LIBS=C:\Programs\DC\Plugin\gridgaincompute.jar;%WAT_HOME%\jar\*;%WAT_HOME%\jar\rmi\*;%WAT_HOME%\jar\sys\*;%WAT_HOME%\jar\ext\*;%WAT_HOME%\jar\sys\excel\*;%WAT_HOME%\jar\sys\akka\*;%WAT_HOME%\jar\sys\ratingEditor\*;%WAT_HOME%\..\apps\HEC-HMS\*;%WAT_HOME%\jar\sys\geotools\*
 rem this isn't a mistake, its supposed to clear the variable so that the path doesn't keep growing
 set IGNITE_LIBS=
 

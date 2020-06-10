@@ -6,7 +6,7 @@ The distributed compute works through a controller node and compute nodes. The c
 The HEC-WAT-Personal.config needs to be in "C:\Users\<USERNAME>\AppData\Roaming\HEC\HEC-WAT\". If a personal configuration file already exists, the contents of this file can be added to the contents of the existing file as long as none of the vmparam settings override one another.
 
 ## default-config.xml
-This xml file contains the details of how the ignite grid will function. There are many variations that can be placed in this xml file. A few important settings typically need to be adjusted by the user:
+This xml file contains the details of how the ignite grid will function. There are many variations that can be placed in this xml file. This file needs to be placed in "C:\Programs\DC\". A few important settings typically need to be adjusted by the user:
 - The port the compute nodes listen on and the controller broadcasts on
 - The working directory for the models
 

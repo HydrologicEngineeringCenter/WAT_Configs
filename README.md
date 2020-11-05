@@ -17,7 +17,7 @@ The computenode.bat needs to be stored in "C:\Programs\DC\" it launches the igni
 The distributed compute relies on Apache Ignite and a few jars developed by RMA to manage the interaction of HEC-WAT with the ignite capabilities. All of the distributed compute dependencies need to live in "C:\Programs\DC\"
 
 ### gridgaincompute.jar
-The gridgaincompute.jar manages the integration of ignite and HEC-WAT dependencies. It is developed as a plugin in HEC-WAT that adds the necessary UI components to start a distributed compute and to manage the compute. It can be downloaded from XXXXXXXXXX It needs to be placed in "C:\Programs\DC\Plugin\".
+The gridgaincompute.jar manages the integration of ignite and HEC-WAT dependencies. It is developed as a plugin in HEC-WAT that adds the necessary UI components to start a distributed compute and to manage the compute. It can be downloaded from https://drive.hecdev.net/files/For%20Will/DistributedCompute/ It needs to be placed in "C:\Programs\DC\Plugin\".
 
 ### Ignite Compute Node Resource files
-The ignite package for the controller can be found at XXXXXXXXXXXXX it needs to be placed in "C:\Programs\DC\" it will contain all of the ignite jars necessary to find the compute nodes. It also stores the JDK appropriate for the version of the ignite resources.
+The ignite package for the controller can be found at https://drive.hecdev.net/files/For%20Will/DistributedCompute/ it needs to be placed in "C:\Programs\DC\" it will contain all of the ignite jars necessary to find the compute nodes. It also stores the JDK appropriate for the version of the ignite resources.

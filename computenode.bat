@@ -1,8 +1,8 @@
 @echo off
 
 rem adjust these first two
-set IGNITE_HOME=C:\Programs\ignite
-set JAVA_HOME=C:\Programs\ignite\jdk
+set IGNITE_HOME=C:\Programs\DC\ignite
+set JAVA_HOME=C:\Programs\DC\ignite\jdk
 set WAT_HOME=C:\Programs\HEC-WAT\HEC-WAT
 
 

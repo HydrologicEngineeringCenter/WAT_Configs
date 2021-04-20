@@ -12,12 +12,13 @@ This xml file contains the details of how the ignite grid will function. There a
 
 ## Distributed Compute Dependencies
 The distributed compute relies on Apache Ignite and a few jars developed by RMA to manage the interaction of HEC-WAT with the ignite capabilities. All of the distributed compute dependencies need to live in "C:\Programs\DC\"
+A zip file containing the dependencies for the controller node should be available at this path: https://www.hec.usace.army.mil/nexus/repository/WAT_Plugins/DC/DC-Controller.7z
 
 ### gridgaincompute.jar
-The gridgaincompute.jar manages the integration of ignite and HEC-WAT dependencies. It is developed as a plugin in HEC-WAT that adds the necessary UI components to start a distributed compute and to manage the compute. It can be downloaded from https://drive.hecdev.net/files/For%20Will/DistributedCompute/ It needs to be placed in "C:\Programs\DC\Plugin\".
+The gridgaincompute.jar manages the integration of ignite and HEC-WAT dependencies. It is developed as a plugin in HEC-WAT that adds the necessary UI components to start a distributed compute and to manage the compute. It is included in the zip file above. It needs to be placed in "C:\Programs\DC\Plugin\".
 
 ### rmiServer.jar
-The rmiServer.jar manages the communication across processes using Remote invocation (RMI). It can be downloaded from https://drive.hecdev.net/files/For%20Will/DistributedCompute/ It needs to be placed in "C:\Programs\DC\RMI\".
+The rmiServer.jar manages the communication across processes using Remote invocation (RMI). It is included in the zip file above It needs to be placed in "C:\Programs\DC\RMI\".
 
 ### Ignite Controller Resource files
-The ignite package for the controller can be found at https://drive.hecdev.net/files/For%20Will/DistributedCompute/ it needs to be placed in "C:\Programs\DC\sys" it will contain all of the ignite jars necessary to find the compute nodes.
+The ignite package for the controller is included in the zip file above. It needs to be placed in "C:\Programs\DC\sys" it will contain all of the ignite jars necessary to find the compute nodes.

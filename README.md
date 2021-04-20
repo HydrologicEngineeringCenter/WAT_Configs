@@ -20,4 +20,4 @@ The distributed compute relies on Apache Ignite and a few jars developed by RMA 
 The gridgaincompute.jar manages the integration of ignite and HEC-WAT dependencies. It is developed as a plugin in HEC-WAT that adds the necessary UI components to start a distributed compute and to manage the compute. It is included in the package above, and needs to be placed in "C:\Programs\DC\Plugin\".
 
 ### Ignite Compute Node Resource files
-The ignite package for the compute node is included in the zip package above, it needs to be placed in "C:\Programs\DC\" it will contain all of the ignite jars necessary to find the compute nodes. It also stores the JDK appropriate for the version of the ignite resources.
+The ignite package for the compute node is included in the zip package above, it needs to be placed in "C:\Programs\DC\" it will contain all of the ignite jars necessary to communicate with the controller node. It also stores the JDK appropriate for the version of the ignite resources.
